@@ -1,0 +1,96 @@
+:root {
+    --bg: #0a1a33;
+    --text: #ffffff;
+    --card: #112b57;
+    --accent: #4da3ff;
+}
+
+.light-blue {
+    --bg: #e5f3ff;
+    --text: #003b6f;
+    --card: #ffffff;
+    --accent: #5bb8ff;
+}
+
+.purple {
+    --bg: #2a0033;
+    --text: #f8d9ff;
+    --card: #3d004d;
+    --accent: #d96bff;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    text-align: center;
+}
+
+header {
+    padding: 20px;
+}
+
+.selectors {
+    margin-top: 10px;
+}
+
+select {
+    padding: 8px;
+    margin: 5px;
+    border-radius: 6px;
+    border: none;
+    background: var(--card);
+    color: var(--text);
+}
+
+.scoreboard {
+    margin: 20px 0;
+    font-size: 18px;
+}
+
+.buttons {
+    margin: 20px 0;
+}
+
+.choice-btn {
+    padding: 15px 25px;
+    margin: 10px;
+    border: none;
+    border-radius: 10px;
+    background: var(--accent);
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.choice-btn:hover {
+    transform: scale(1.1);
+}
+
+#winner-animation {
+    margin-top: 20px;
+    height: 40px;
+    font-size: 32px;
+    animation: pop 0.4s ease-in-out;
+}
+
+@keyframes pop {
+    from { transform: scale(0.3); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+}
+
+#leaderboard {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+#leaderboard li {
+    background: var(--card);
+    margin: 5px auto;
+    width: 200px;
+    padding: 10px;
+    border-radius: 8px;
+}
